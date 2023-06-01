@@ -18,6 +18,39 @@ To complete a subscription payment:
 
 **Note**: Steps 6 and 7 may happen in reverse order. Make sure to provision the subscription from the thank you page **and** the webhook handler.
 
+## Setup
+
+Clone the repo:
+
+```sh
+gh repo clone joshnuss/sveltekit-stripe-subscriptions
+```
+
+Configure environment variables in `.env`:
+
+```sh
+cp .env.example .env
+```
+
+- `PUBLIC_STRIPE_KEY`: Your public Stripe key.
+- `SECRET_STRIPE_KEY`: Your private Stripe key.
+- `SECRET_STRIPE_WEBHOOK_KEY`: Stripe's secret used to sign webhooks.
+- `STRIPE_PRICE_ID`: The `priceId` for the subscription product. You might want to store this in your databases.
+
+Install dependecies:
+
+```sh
+pnpm install
+```
+
+## Usage
+
+Run the dev server:
+
+```sh
+pnpm dev
+```
+
 ## License
 
 MIT
