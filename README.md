@@ -2,7 +2,7 @@
 
 Example of using Stripe [Subscriptions](https://stripe.com/docs/api/subscriptions) & [PaymentElement](https://stripe.com/docs/payments/payment-element) with [SvelteKit](https://kit.svelte.dev).
 
-**Note**: [Stripe Checkout](https://stripe.com/payments/checkout) is an alternative approach
+**Note**: [Stripe Checkout](https://stripe.com/payments/checkout) is an alternative approach if you don't want to build your own payment forms. [Help me choose...](https://dev.to/stripe/making-sense-of-stripe-checkout-payment-links-and-the-payment-element-23o5)
 
 ## Payment Flow
 
