@@ -1,6 +1,6 @@
 # SvelteKit + Stripe Subscriptions
 
-Example of using [Stripe PaymentElement](https://stripe.com/docs/payments/payment-element) with [SvelteKit](https://kit.svelte.dev).
+Example of using Stripe [Subscriptions](https://stripe.com/docs/api/subscriptions) & [PaymentElement](https://stripe.com/docs/payments/payment-element) with [SvelteKit](https://kit.svelte.dev).
 
 **Note**: [Stripe Checkout](https://stripe.com/payments/checkout) is an alternative approach
 
