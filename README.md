@@ -45,10 +45,16 @@ pnpm install
 
 ## Usage
 
+Tunnel Stripe events:
+
+```sh
+stripe listen --forward-to localhost:5173/stripe/webhooks
+```
+
 Run the dev server:
 
 ```sh
-pnpm dev
+SECRET_STRIPE_WEBHOOK_KEY=whsec_.... pnpm dev
 ```
 
 ## License
