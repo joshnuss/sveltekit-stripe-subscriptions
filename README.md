@@ -12,7 +12,7 @@ To complete a subscription payment:
 2. [Stripe Customer record is created and id is stored in a cookie.](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/main/src/routes/checkout/%2Bpage.server.js)
 3. [Stripe Subscription record is created based on a `priceId` and the Payment Intent's secret is returned.](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/main/src/routes/checkout/payment/%2Bpage.server.js)
 4. [User is presented with the PaymentElement to enter their payment info.](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/820c9ae025caf5c34a6bc1e725eefa87d64e576d/src/routes/checkout/payment/%2Bpage.svelte#L40-L46)
-5. [User submits form, causing `stripe.confirmPayment()` to be called.](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/820c9ae025caf5c34a6bc1e725eefa87d64e576d/src/routes/checkout/payment/%2Bpage.svelte#L21-L32)
+5. [User submits form, causing `stripe.confirmPayment()` to be called.](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/820c9ae025caf5c34a6bc1e725eefa87d64e576d/src/routes/checkout/payment/%2Bpage.svelte#L21-L27)
 6. [Stripe redirects user to thank you page.](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/main/src/routes/checkout/complete/%2Bpage.server.js)
 7. [Stripe sends webhook `customer.subscription.created`.](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/main/src/routes/stripe/webhooks/%2Bserver.js)
 
