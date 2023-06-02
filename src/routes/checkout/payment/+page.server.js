@@ -2,7 +2,9 @@ import { stripe } from '$lib/stripe'
 import { env } from '$env/dynamic/private'
 
 export async function load({ cookies }) {
+  // pull customerId from cookie
   const customerId = cookies.get('customerId')
+  // pull priceId from `.env` (probably better to use a database or config file for this)
   const priceId = env.STRIPE_PRICE_ID
 
   /* Create the subscription
