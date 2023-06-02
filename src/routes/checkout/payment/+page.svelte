@@ -19,7 +19,7 @@
   // handle form submission
   async function submit() {
     const { error } = await stripe.confirmPayment({
-      // `Elements` instance that was used to create the Payment Element
+      // pass instance that was used to create the Payment Element
       elements,
       confirmParams: {
         return_url: returnUrl
@@ -35,7 +35,6 @@
 
 <h1>Payment</h1>
 
-<!-- wait for stripe install to be loading -->
 {#if stripe}
   <form on:submit|preventDefault={submit}>
     <Elements {stripe} {clientSecret} bind:elements>
