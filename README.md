@@ -37,7 +37,8 @@ cp .env.example .env
 - `SECRET_STRIPE_WEBHOOK_KEY`: Stripe's secret used to sign webhooks.
 - `STRIPE_PRICE_ID`: The `priceId` for the subscription product. You might want to store this in your database.
 - `DOMAIN`: The site's domain. Used for creating redirect URLs. Default is `http://localhost:5173`
-  Install dependecies:
+
+Install dependecies:
 
 ```sh
 pnpm install
