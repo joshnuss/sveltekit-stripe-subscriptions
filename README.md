@@ -9,7 +9,7 @@ Example of using Stripe [Subscriptions](https://stripe.com/docs/api/subscription
 To complete a subscription payment:
 
 1. User enters their e-mail address and name. [View code](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/main/src/routes/checkout/%2Bpage.svelte)
-2. Stripe Customer record is created and id is stored in a cookie. [View code](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/main/src/routes/checkout/%2Bpage.server.js)
+2. Stripe Customer record is created and `customer.id` is stored in a cookie. [View code](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/main/src/routes/checkout/%2Bpage.server.js)
 3. Stripe Subscription record is created based on a `priceId` and the Payment Intent's secret is returned. [View code](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/main/src/routes/checkout/payment/%2Bpage.server.js)
 4. User is presented with the PaymentElement to enter their payment info. [View code](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/820c9ae025caf5c34a6bc1e725eefa87d64e576d/src/routes/checkout/payment/%2Bpage.svelte#L40-L46)
 5. User submits form, causing `stripe.confirmPayment()` to be called. [View code](https://github.com/joshnuss/sveltekit-stripe-subscriptions/blob/820c9ae025caf5c34a6bc1e725eefa87d64e576d/src/routes/checkout/payment/%2Bpage.svelte#L21-L27)
