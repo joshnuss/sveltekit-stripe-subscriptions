@@ -14,7 +14,7 @@ export async function load({ url }) {
    * Some payment methods will [immediately succeed or fail][0] upon
    * confirmation, while others will first enter a `processing` state.
    *
-   * https://stripe.com/docs/payments/payment-methods#payment-notification
+   * [0] https://stripe.com/docs/payments/payment-methods#payment-notification
    */
   let message
 
