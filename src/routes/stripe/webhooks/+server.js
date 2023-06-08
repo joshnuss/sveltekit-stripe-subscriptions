@@ -25,9 +25,9 @@ export async function POST({ request }) {
   }
 
   /* Signature has been verified, so we can process events
-   * Review important events for Billing webhooks
+   * 
+   * Review important events for Billing webhooks:
    * https://stripe.com/docs/billing/webhooks
-   * Remove comment to see the various objects sent for this sample
    */
   switch (event.type) {
     case 'customer.subscription.created':
